@@ -1,0 +1,132 @@
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+  
+  .heroDescription {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 32px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .primaryButton {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .secondaryButton {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .primaryButton:hover,
+  .secondaryButton:hover {
+    opacity: 0.9;
+  }
+  
+  /* Section styles */
+  
+  
+  .mainContent {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between; /* Ensure even spacing between sections */
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 100%; /* Override any restricted max-width */
+    margin: 0 auto; /* Center the container on the page */
+    padding: 0 0; /* Add padding on the sides to prevent content from touching the edges */
+  }
+  
+  
+  /* Ensure sections have consistent width */
+  .section {
+    min-width: 100px; /* Prevent shrinking */
+    padding: 0 3rem;
+ 
+
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .itemIcon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: #007bff;
+  }
+  
+  /* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .mainContent {
+        background-color: transparent;
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+      gap: 2rem; /* Reduce the gap for vertical layout */
+      padding: 0 2rem;
+      box-sizing: border-box;
+     
+    }
+
+    .section{
+        background-color: #f9f9f9;
+    }
+  
+    
+  
+  /* Additional Adjustments for Icons and Text */
+  .itemIcon {
+    font-size: 1.8rem; /* Slightly reduce icon size */
+    margin-right: 0.8rem;
+    color: #007bff;
+  }
+  
+  .sectionTitle {
+    font-size: 1.6rem; /* Slightly smaller title for smaller screens */
+    margin-bottom: 1rem;
+  }
+  
+  .itemTitle {
+    font-size: 1.1rem;
+  }
+  
+  .itemDescription {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+  }
+
+}

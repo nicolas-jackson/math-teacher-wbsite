@@ -4,14 +4,28 @@ import ReactPlayer from "react-player/vimeo";
 import styles from './VideoLibrary.module.css'
 
 const VideoLibrary = () => {
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState([ {
+    "title": "Принципы простых вычислений",
+    "description": "Учебное видео по математике.",
+    "vimeoId": "1041386767"
+  },
+  {
+    "title": "Фигуры в математике",
+    "description": "Учебное видео по геометрии.",
+    "vimeoId": "1041386484"
+  },
+  {
+    "title": "Математика для начальных классов",
+    "description": "Учебное видео с основами.",
+    "vimeoId": "1041327472"
+  }]);
 
   // Fetch videos from MongoDB
   useEffect(() => {
     const fetchVideos = async () => {
       try {
         const response = await axios.get("https://math-teacher-website.onrender.com/api/videos");
-        setVideos(response.data); // Store videos in state
+        //setVideos(response.data); // Store videos in state
       } catch (error) {
         console.error("Error fetching videos:", error);
       }

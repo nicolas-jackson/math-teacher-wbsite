@@ -4,7 +4,7 @@ import ReactPlayer from "react-player/vimeo";
 import styles from './VideoLibrary.module.css'
 
 const VideoLibrary = () => {
-  const [videos, setVideos] = useState([ {
+  const [videos] = useState([ {
     "title": "Принципы простых вычислений",
     "description": "Учебное видео по математике.",
     "vimeoId": "1041386767"
@@ -24,7 +24,7 @@ const VideoLibrary = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await axios.get("https://math-teacher-website.onrender.com/api/videos");
+        //const response = await axios.get("https://math-teacher-website.onrender.com/api/videos");
         //setVideos(response.data); // Store videos in state
       } catch (error) {
         console.error("Error fetching videos:", error);

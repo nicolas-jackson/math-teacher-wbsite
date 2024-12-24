@@ -4,21 +4,7 @@ import ReactPlayer from "react-player/vimeo";
 import styles from './VideoLibrary.module.css'
 
 const VideoLibrary = () => {
-  const [videos] = useState([ {
-    "title": "Принципы простых вычислений",
-    "description": "Учебное видео по математике.",
-    "vimeoId": "1041386767"
-  },
-  {
-    "title": "Фигуры в математике",
-    "description": "Учебное видео по геометрии.",
-    "vimeoId": "1041386484"
-  },
-  {
-    "title": "Математика для начальных классов",
-    "description": "Учебное видео с основами.",
-    "vimeoId": "1041327472"
-  }]);
+  const [videos] = useState([ ]);
 
   // Fetch videos from MongoDB
   useEffect(() => {
